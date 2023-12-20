@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+		background-color: chartreuse;
+	}
+	div{
+        background-color: cyan;
+		width: 500px;
+		height: 500px;
+	   border: 1px solid rgb(15, 7, 7);
+	   margin: 0 auto;
+	   padding: 130px;
+	   box-sizing: border-box;
+       
+		
+	}
+	
+	body{
+		
+		background-color: rgb(17, 16, 16);
+	}
+	button{
+		width: 180px;
+		height: 20px;
+		background-color: rgb(255, 72, 0);
+	}
+</style>
+<body>
+  <center>  <h1> Welcome to login </h1></center>
+    <hr>
+    <div>
+        
+username: <br>
+<input type="text" name="text " id="username">
+<br><br>
+
+password: <br>
+<input type="password" name="text" id="password" >
+<br><br>
+<button onclick="login()">Submit</button>
+    </div>
+    <script>
+        function login()
+        {
+            var username= document.getElementById('username').value;
+            var password= document.getElementById('password').value;
+
+            if(username=="RIKU" && password=="R@123")
+            {
+                location.assign("http://127.0.0.1:5500/oo.html");
+            }
+            else{
+                window.alert("login failed");
+            }
+        }
+    </script>
+</body>
+</html>
